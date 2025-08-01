@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scenario Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+    }
+    #question {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+    .option-btn {
+      display: block;
+      width: 100%;
+      margin: 8px 0;
+      padding: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      border: 1px solid #333;
+      border-radius: 5px;
+      background-color: white;
+      transition: background-color 0.3s ease;
+    }
+    .option-btn:hover {
+      background-color: #e0e0e0;
+    }
+    #score {
+      margin-top: 25px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    #nextBtn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Quiz App</h1>
+  <div id="quiz-container">
+    <div id="question">Loading question...</div>
+    <div id="options"></div>
+    <button id="nextBtn">Next Question</button>
+    <div id="score"></div>
+  </div>
+
+  <script src="backend.js"></script>
+
+</body>
+</html>
